@@ -13,9 +13,21 @@ A simple node that allows users to extract individual elements of a matrix
 
 1) Load the plugin, either using the Plug-in Manager or using the following MEL command:
 
+If you are using the C++ plugin:
+
+    loadPlugin "skMatrixElements"
+
+If you are using the Python plugin:
+
     loadPlugin "skScriptedMatrixElements.py"
 
 2) Create the node using the following MEL command:
+
+If you are using the C++ plugin:
+
+    createNode skMatrixElements
+
+If you are using the Python plugin:
 
     createNode skScriptedMatrixElements
 
