@@ -43,7 +43,7 @@ nodeType = 'skScriptedMatrixElements'
 nodeVersion = '1.0'
 nodeId = om.MTypeId(0x001212C3) #unique id obtained from ADN
 
-class skScriptedMatrixElements(omMPx.MPxNode):
+class SkScriptedMatrixElements(omMPx.MPxNode):
 
     inputMatrix = om.MObject()
     m00 = om.MObject()
@@ -64,263 +64,263 @@ class skScriptedMatrixElements(omMPx.MPxNode):
     m33 = om.MObject()
 
     def __init__(self):
-        super(skScriptedMatrixElements, self).__init__()
+        super(SkScriptedMatrixElements, self).__init__()
 
     def compute(self, plug, dataBlock):
 
-        if (plug == skScriptedMatrixElements.m00):
+        if (plug == SkScriptedMatrixElements.m00):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m00)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m00)
             outputHandle.setFloat(inputMatrix(0,0))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m01):
+        elif (plug == SkScriptedMatrixElements.m01):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m01)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m01)
             outputHandle.setFloat(inputMatrix(0,1))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m02):
+        elif (plug == SkScriptedMatrixElements.m02):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m02)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m02)
             outputHandle.setFloat(inputMatrix(0,2))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m03):
+        elif (plug == SkScriptedMatrixElements.m03):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m03)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m03)
             outputHandle.setFloat(inputMatrix(0,3))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m10):
+        elif (plug == SkScriptedMatrixElements.m10):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m10)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m10)
             outputHandle.setFloat(inputMatrix(1,0))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m11):
+        elif (plug == SkScriptedMatrixElements.m11):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m11)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m11)
             outputHandle.setFloat(inputMatrix(1,1))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m12):
+        elif (plug == SkScriptedMatrixElements.m12):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m12)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m12)
             outputHandle.setFloat(inputMatrix(1,2))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m13):
+        elif (plug == SkScriptedMatrixElements.m13):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m13)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m13)
             outputHandle.setFloat(inputMatrix(1,3))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m20):
+        elif (plug == SkScriptedMatrixElements.m20):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m20)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m20)
             outputHandle.setFloat(inputMatrix(2,0))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m21):
+        elif (plug == SkScriptedMatrixElements.m21):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m21)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m21)
             outputHandle.setFloat(inputMatrix(2,1))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m22):
+        elif (plug == SkScriptedMatrixElements.m22):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m22)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m22)
             outputHandle.setFloat(inputMatrix(2,2))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m23):
+        elif (plug == SkScriptedMatrixElements.m23):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m23)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m23)
             outputHandle.setFloat(inputMatrix(2,3))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m30):
+        elif (plug == SkScriptedMatrixElements.m30):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m30)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m30)
             outputHandle.setFloat(inputMatrix(3,0))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m31):
+        elif (plug == SkScriptedMatrixElements.m31):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m31)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m31)
             outputHandle.setFloat(inputMatrix(3,1))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m32):
+        elif (plug == SkScriptedMatrixElements.m32):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m32)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m32)
             outputHandle.setFloat(inputMatrix(3,2))
             dataBlock.setClean(plug)
 
-        elif (plug == skScriptedMatrixElements.m33):
+        elif (plug == SkScriptedMatrixElements.m33):
 
-            dataHandle = dataBlock.inputValue(skScriptedMatrixElements.inputMatrix)
+            dataHandle = dataBlock.inputValue(SkScriptedMatrixElements.inputMatrix)
             inputMatrix = dataHandle.asMatrix()
-            outputHandle = dataBlock.outputValue(skScriptedMatrixElements.m33)
+            outputHandle = dataBlock.outputValue(SkScriptedMatrixElements.m33)
             outputHandle.setFloat(inputMatrix(3,3))
             dataBlock.setClean(plug)
 
 #creator function
 def nodeCreator():
-    return omMPx.asMPxPtr(skScriptedMatrixElements())
+    return omMPx.asMPxPtr(SkScriptedMatrixElements())
 
 #init function
 def nodeInitializer():
 
 	#inputMatrix attr
     mAttr = om.MFnMatrixAttribute()
-    skScriptedMatrixElements.inputMatrix = mAttr.create('inputMatrix', 'im')
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.inputMatrix)
+    SkScriptedMatrixElements.inputMatrix = mAttr.create('inputMatrix', 'im')
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.inputMatrix)
 
     #m00 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m00 = nAttr.create('m00', 'm00', om.MFnNumericData.kFloat, 1.0)
+    SkScriptedMatrixElements.m00 = nAttr.create('m00', 'm00', om.MFnNumericData.kFloat, 1.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m00)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m00)
 
     #m01 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m01 = nAttr.create('m01', 'm01', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m01 = nAttr.create('m01', 'm01', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m01)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m01)
 
     #m02 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m02 = nAttr.create('m02', 'm02', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m02 = nAttr.create('m02', 'm02', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m02)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m02)
 
     #m03 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m03 = nAttr.create('m03', 'm03', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m03 = nAttr.create('m03', 'm03', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m03)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m03)
 
     #m10 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m10 = nAttr.create('m10', 'm10', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m10 = nAttr.create('m10', 'm10', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m10)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m10)
 
     #m11 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m11 = nAttr.create('m11', 'm11', om.MFnNumericData.kFloat, 1.0)
+    SkScriptedMatrixElements.m11 = nAttr.create('m11', 'm11', om.MFnNumericData.kFloat, 1.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m11)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m11)
 
     #m12 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m12 = nAttr.create('m12', 'm12', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m12 = nAttr.create('m12', 'm12', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m12)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m12)
 
     #m13 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m13 = nAttr.create('m13', 'm13', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m13 = nAttr.create('m13', 'm13', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m13)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m13)
 
     #m20 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m20 = nAttr.create('m20', 'm20', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m20 = nAttr.create('m20', 'm20', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m20)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m20)
 
     #m21 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m21 = nAttr.create('m21', 'm21', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m21 = nAttr.create('m21', 'm21', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m21)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m21)
 
     #m22 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m22 = nAttr.create('m22', 'm22', om.MFnNumericData.kFloat, 1.0)
+    SkScriptedMatrixElements.m22 = nAttr.create('m22', 'm22', om.MFnNumericData.kFloat, 1.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m22)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m22)
 
     #m23 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m23 = nAttr.create('m23', 'm23', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m23 = nAttr.create('m23', 'm23', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m23)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m23)
 
     #m30 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m30 = nAttr.create('m30', 'm30', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m30 = nAttr.create('m30', 'm30', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m30)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m30)
 
     #m31 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m31 = nAttr.create('m31', 'm31', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m31 = nAttr.create('m31', 'm31', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m31)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m31)
 
     #m32 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m32 = nAttr.create('m32', 'm32', om.MFnNumericData.kFloat, 0.0)
+    SkScriptedMatrixElements.m32 = nAttr.create('m32', 'm32', om.MFnNumericData.kFloat, 0.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m32)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m32)
 
     #m33 attr
     nAttr = om.MFnNumericAttribute()
-    skScriptedMatrixElements.m33 = nAttr.create('m33', 'm33', om.MFnNumericData.kFloat, 1.0)
+    SkScriptedMatrixElements.m33 = nAttr.create('m33', 'm33', om.MFnNumericData.kFloat, 1.0)
     nAttr.setStorable(False)
-    skScriptedMatrixElements.addAttribute(skScriptedMatrixElements.m33)
+    SkScriptedMatrixElements.addAttribute(SkScriptedMatrixElements.m33)
 
     #connect attrs
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m00)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m01)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m02)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m03)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m10)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m11)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m12)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m13)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m20)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m21)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m22)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m23)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m30)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m31)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m32)
-    skScriptedMatrixElements.attributeAffects(skScriptedMatrixElements.inputMatrix, skScriptedMatrixElements.m33)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m00)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m01)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m02)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m03)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m10)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m11)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m12)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m13)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m20)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m21)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m22)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m23)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m30)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m31)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m32)
+    SkScriptedMatrixElements.attributeAffects(SkScriptedMatrixElements.inputMatrix, SkScriptedMatrixElements.m33)
 
 #init plugin
 def initializePlugin(mObject):
