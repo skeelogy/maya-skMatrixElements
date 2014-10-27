@@ -77,7 +77,7 @@ MObject SkMatrixElements::m31;
 MObject SkMatrixElements::m32;
 MObject SkMatrixElements::m33;
 
-//main deform method
+//main compute method
 MStatus SkMatrixElements::compute(const MPlug& plug, MDataBlock& dataBlock)
 {
     MStatus stat = MS::kSuccess;
